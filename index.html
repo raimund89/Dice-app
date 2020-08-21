@@ -1,0 +1,84 @@
+<html>
+
+	<head>
+		<title>
+			Mexxen
+		</title>
+
+		<link rel="icon" type="image/ico" href="/static/images/favicon.ico"/>
+
+		<style type="text/css">
+			@font-face {
+				font-family: 'Showcard Gothic';
+				src: local('Showcard Gothic'), local('ShowcardGothic-Reg'),
+				        url('static/fonts/ShowcardGothic-Reg.woff2') format('woff2'),
+				        url('static/fonts/ShowcardGothic-Reg.woff') format('woff'),
+				        url('static/fonts/ShowcardGothic-Reg.ttf') format('truetype'),
+				        url('static/fonts/ShowcardGothic-Reg.svg#ShowcardGothic-Reg') format('svg');
+				font-weight: normal;
+				font-style: normal;
+				font-display: swap;
+			}
+
+			body {
+				background-color: #000;
+				color: #FFF;
+			}
+
+			canvas {
+				background-color: #9fff80;
+				border-radius: 20px;
+				border: 5px solid grey;
+				margin: auto;
+				display: block;
+			}
+
+			img {
+				display: none;
+			}
+
+			.textholder {
+				text-align: center;
+				margin-bottom: 20px;
+			}
+		</style>
+
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="/static/CanvasInput.js"></script>
+		<script src="/static/CanvasAdditions.js"></script>
+	</head>
+
+	<body>
+		<canvas id="canvas" width="1000" height="700" onmousemove="canvasMouseMove(event);" onclick="canvasClick(event);"/>
+
+		<img id="1a" src="/static/images/1a.png">
+	    <img id="1b" src="/static/images/1b.png">
+	    <img id="1c" src="/static/images/1c.png">
+	    <img id="1d" src="/static/images/1d.png">
+	    <img id="2a" src="/static/images/2a.png">
+	    <img id="2b" src="/static/images/2b.png">
+	    <img id="2c" src="/static/images/2c.png">
+	    <img id="2d" src="/static/images/2d.png">
+	    <img id="3a" src="/static/images/3a.png">
+	    <img id="3b" src="/static/images/3b.png">
+	    <img id="3c" src="/static/images/3c.png">
+	    <img id="3d" src="/static/images/3d.png">
+	    <img id="4a" src="/static/images/4a.png">
+	    <img id="4b" src="/static/images/4b.png">
+	    <img id="4c" src="/static/images/4c.png">
+	    <img id="4d" src="/static/images/4d.png">
+	    <img id="5a" src="/static/images/5a.png">
+	    <img id="5b" src="/static/images/5b.png">
+	    <img id="5c" src="/static/images/5c.png">
+	    <img id="5d" src="/static/images/5d.png">
+	    <img id="6a" src="/static/images/6a.png">
+	    <img id="6b" src="/static/images/6b.png">
+	    <img id="6c" src="/static/images/6c.png">
+	    <img id="6d" src="/static/images/6d.png">
+	    <img id="refresh" src="/static/images/refresh.png">
+  	
+		<script src="/static/game.js"></script>
+
+  	</body>
+
+</html>
